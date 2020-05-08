@@ -285,13 +285,34 @@ section {
     padding: 15px 0;
     font-size: 16px;
 }
-/* service grid container styles */
+/* service styles begin */
+.services {
+    background: #fce138; 
+}
+  .service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .service-grid-container {
-
-}
-.service-grid-item {
-
-}
+    background: lightyellow;
+    width: 80%;
+    display: grid;
+    /* repeat(iterator, size) */
+    grid-template-columns: 1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    border: 2px solid #024e76;
+    color:  #024e76;
+    font-size: 1.2rem;
+  }
+  .service-grid-item {
+    padding: 15px 0;
+    border: 2px solid #024e76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */

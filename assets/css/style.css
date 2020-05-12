@@ -318,19 +318,33 @@ opacity: 0;
     top: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(252, 225, 56, 0.3), rgb(2, 78, 118)) ;
+    opacity: 0;
+    transition: opacity .5s;
 }
+.trainer:hover .trainer-img::after{
+    opacity: 1;
+}
+
 .trainer-img h3 {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin-bottom:5px;
     font-size:28px;
+    opacity:0;
+    transition: opacity .25s;
   }
   
   .trainer-img h4 {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     font-size:22px;
+    opacity:0;
+    transition: opacity .25s;
+
   }
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    opacity:1;
+}
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;

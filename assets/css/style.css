@@ -351,8 +351,10 @@ opacity: 0;
 }
 .trainer-bio h3 {
     font-size: 28px;
+    display:none;
 } 
 .trainer-bio h4 {
+    display:none;
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
@@ -573,7 +575,14 @@ section {
     grid-column: 1 / -1;
     grid-row: -1;
     }
+.trainer-img h3, .trainer-img h4, .trainer-img::after{
+    display:none;
 }
+.trainer-bio h3, .trainer-bio h4{
+    display:block;
+}
+}
+
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
 .hero-form button {
